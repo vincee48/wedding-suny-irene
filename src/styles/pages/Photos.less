@@ -1,0 +1,29 @@
+@import "./../vendor/elements.less";
+@import "./../colours.less";
+
+.Photos {
+    .heading {
+        text-align: center;
+        font-size: 2em;
+        padding: 1em;
+        color: @text-colour;
+    }
+    .image-list {
+        overflow: hidden;
+        @media (min-width: 320px) {
+            .columns(100%, 1, 1em, #fff, none, 0);
+        }
+        @media (min-width: 480px) {
+            .columns(50%, 2, 1em, #fff, none, 0);
+        }
+        @media (min-width: 768px) {
+            .columns(33%, 3, 1em, #fff, none, 0);
+        }
+        @media (min-width: 920px) {
+            .columns(25%, 4, 1em, #fff, none, 0);
+        }
+        @media (min-width: 1224px) {
+            .columns(20%, 5, 1em, #fff, none, 0);
+        }
+    }
+}

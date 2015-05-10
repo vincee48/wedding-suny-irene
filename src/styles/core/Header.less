@@ -1,0 +1,51 @@
+@import "./../vendor/elements.less";
+@import "./../colours.less";
+
+header {
+	color: @dark-text-colour;
+	text-align: center;
+	.drop-shadow(0, 0, 2px, 0.2);
+	.logo {
+		padding: 2em;
+		.logo-text {
+			font-family: 'Tangerine';
+			font-size: 4em;
+		}
+	}
+	.nav {
+		ul {
+			margin: 0;
+			li {
+				display: inline-block;
+				margin: 0;
+				a {
+					padding: 1em;
+					display: block;
+					text-decoration: none;
+					color: @text-colour;
+					&:hover {
+                        background: @hover-colour;
+                        color: #111;
+					}
+				}
+			}
+		}
+	}
+    .background-left {
+        float: left;
+        height: 120px;
+        width: 100%;
+        background-image: url('/images/flowers.png');
+        background-repeat: no-repeat;
+        position: absolute;
+    }
+    .background-right {
+        float: right;
+        height: 120px;
+        width: 100%;
+        background-image: url('/images/flowers.png');
+        background-repeat: no-repeat;
+        .flipH();
+        position: absolute;
+    }
+}

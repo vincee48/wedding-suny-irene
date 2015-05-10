@@ -1,0 +1,26 @@
+@import "./vendor/elements.less";
+
+.image-pin-wrapper {
+    text-align: center;
+    .box-shadow(0 2px 3px #999);
+    .opaque {
+        .opacity(0.8);
+        &:hover {
+            .opacity(1);
+        }
+    }
+    img {
+        margin: 1em auto;
+        width: 95%;
+    }
+    .title {
+        font-size: 2em;
+        font-family: 'Tangerine';
+        font-weight: bold;
+        padding-bottom: 0.5em;
+    }
+}
+
+.image-pin-break {
+    margin: 2em;
+}

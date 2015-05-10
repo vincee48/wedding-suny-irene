@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "app-name": "reactjs",
+    "architecture": "reflux",
+    "styles-language": "less"
+  }
+}
